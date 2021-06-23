@@ -1,0 +1,100 @@
+Restore Archived Project report for circuito_semana3
+Tue Apr 06 13:11:49 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Apr 06 13:11:49 2021 ;
+; Revision Name                   ; circuito_semana3                      ;
+; Top-level Entity Name           ; circuito_semana3                      ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana3.qar' into the 'C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/' directory
+Info: Generated report 'circuito_semana3.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Tue Apr 06 13:11:49 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Files Restored                           ;
++------------------------------------------+
+; File Name                                ;
++------------------------------------------+
+; qar_info.json                            ;
+; assignment_defaults.qdf                  ;
+; bcd_to_7seg_display.vhd                  ;
+; binary_to_bcd.vhd                        ;
+; binary_to_bcd_digit.vhd                  ;
+; calcula_media.vhd                        ;
+; circuito_semana3.qpf                     ;
+; circuito_semana3.qsf                     ;
+; circuito_semana3.vhd                     ;
+; circuito_semana3_assignment_defaults.qdf ;
+; comparador_85.vhd                        ;
+; comparador_8bits.vhd                     ;
+; contador_163.vhd                         ;
+; contador_tempos.vhd                      ;
+; edge_detector.vhd                        ;
+; fluxo_dados.vhd                          ;
+; hexa7seg.vhd                             ;
+; output_files/Chain1.cdf                  ;
+; ram_16x4.vhd                             ;
+; ram_tempos.vhd                           ;
+; registrador_2bits.vhd                    ;
+; registrador_4bits.vhd                    ;
+; timer5k.vhd                              ;
+; timerRep.vhd                             ;
+; timerTotal.vhd                           ;
+; unidade_controle.vhd                     ;
++------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

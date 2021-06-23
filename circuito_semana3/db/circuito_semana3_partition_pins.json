@@ -1,0 +1,257 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "espera",
+					"strict" : false
+				},
+				{
+					"name" : "fim",
+					"strict" : false
+				},
+				{
+					"name" : "acertou",
+					"strict" : false
+				},
+				{
+					"name" : "errou",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "db_tempo_reacao3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout",
+					"strict" : false
+				},
+				{
+					"name" : "db_timeout_total",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mensagem1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "botoes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "jogar",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "nivel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nivel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "repetir",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+
+State Machine - |circuito_semana3|unidade_controle:G2|Eatual
+Name Eatual.ExibeJogadaCERTO Eatual.PassaJogadaCERTO Eatual.ExibeJogadaERRADO Eatual.PassaJogadaERRADO Eatual.EscreveJogada Eatual.ResetContador Eatual.EsperaEscrita Eatual.AumentaLimite Eatual.TerminouErrado Eatual.TerminouCerto Eatual.CicloCerto Eatual.AcertouJogada Eatual.ComparaJogada Eatual.ArmazenaJogada Eatual.EsperaJogada Eatual.InicioCiclo Eatual.Prepara Eatual.Aguarda 
+Eatual.Aguarda 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.Prepara 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+Eatual.InicioCiclo 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+Eatual.EsperaJogada 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+Eatual.ArmazenaJogada 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+Eatual.ComparaJogada 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+Eatual.AcertouJogada 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+Eatual.CicloCerto 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+Eatual.TerminouCerto 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+Eatual.TerminouErrado 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+Eatual.AumentaLimite 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+Eatual.EsperaEscrita 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.ResetContador 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.EscreveJogada 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.PassaJogadaERRADO 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.ExibeJogadaERRADO 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.PassaJogadaCERTO 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.ExibeJogadaCERTO 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

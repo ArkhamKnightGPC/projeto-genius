@@ -1,0 +1,1023 @@
+Analysis & Synthesis report for circuito_semana3
+Tue Apr 06 22:30:54 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |circuito_semana3|unidade_controle:G2|Eatual
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: binary_to_bcd:G3
+ 14. Parameter Settings for Inferred Entity Instance: fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0
+ 15. Port Connectivity Checks: "binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0"
+ 16. Port Connectivity Checks: "binary_to_bcd:G3"
+ 17. Port Connectivity Checks: "unidade_controle:G2"
+ 18. Port Connectivity Checks: "fluxo_dados:G1|timerRep:G13"
+ 19. Port Connectivity Checks: "fluxo_dados:G1|contador_tempos:G11"
+ 20. Port Connectivity Checks: "fluxo_dados:G1|contador_tempos:G10"
+ 21. Port Connectivity Checks: "fluxo_dados:G1|ram_tempos:G9"
+ 22. Port Connectivity Checks: "fluxo_dados:G1|registrador_2bits:G8"
+ 23. Port Connectivity Checks: "fluxo_dados:G1|edge_detector:G7"
+ 24. Port Connectivity Checks: "fluxo_dados:G1|edge_detector:G4"
+ 25. Port Connectivity Checks: "fluxo_dados:G1|ram_16x4:G3"
+ 26. Port Connectivity Checks: "fluxo_dados:G1|comparador_85:G2"
+ 27. Port Connectivity Checks: "fluxo_dados:G1|contador_163:GLim"
+ 28. Port Connectivity Checks: "fluxo_dados:G1|contador_163:G1"
+ 29. Port Connectivity Checks: "fluxo_dados:G1"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Apr 06 22:30:54 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; circuito_semana3                            ;
+; Top-level Entity Name           ; circuito_semana3                            ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 3584                                        ;
+; Total pins                      ; 62                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; circuito_semana3   ; circuito_semana3   ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; unidade_controle.vhd             ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/unidade_controle.vhd       ;         ;
+; timer5k.vhd                      ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timer5k.vhd                ;         ;
+; registrador_4bits.vhd            ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_4bits.vhd      ;         ;
+; registrador_2bits.vhd            ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_2bits.vhd      ;         ;
+; ram_tempos.vhd                   ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd             ;         ;
+; ram_16x4.vhd                     ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd               ;         ;
+; fluxo_dados.vhd                  ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd            ;         ;
+; edge_detector.vhd                ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/edge_detector.vhd          ;         ;
+; contador_tempos.vhd              ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_tempos.vhd        ;         ;
+; contador_163.vhd                 ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_163.vhd           ;         ;
+; comparador_8bits.vhd             ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd       ;         ;
+; comparador_85.vhd                ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_85.vhd          ;         ;
+; binary_to_bcd_digit.vhd          ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd_digit.vhd    ;         ;
+; binary_to_bcd.vhd                ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd.vhd          ;         ;
+; circuito_semana3.vhd             ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd       ;         ;
+; bcd_to_7seg_display.vhd          ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/bcd_to_7seg_display.vhd    ;         ;
+; timerRep.vhd                     ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerRep.vhd               ;         ;
+; calcula_media.vhd                ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd          ;         ;
+; timerTotal.vhd                   ; yes             ; User VHDL File               ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerTotal.vhd             ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf                                 ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc                                ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc                            ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                 ;         ;
+; db/lpm_divide_jbm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/lpm_divide_jbm.tdf      ;         ;
+; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/sign_div_unsign_plh.tdf ;         ;
+; db/alt_u_div_ove.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/alt_u_div_ove.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 2576        ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 2197        ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 1248        ;
+;     -- 5 input functions                    ; 118         ;
+;     -- 4 input functions                    ; 215         ;
+;     -- <=3 input functions                  ; 616         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 3584        ;
+;                                             ;             ;
+; I/O pins                                    ; 62          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 3584        ;
+; Total fan-out                               ; 21326       ;
+; Average fan-out                             ; 3.61        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                ; Entity Name         ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |circuito_semana3                                 ; 2197 (1)            ; 3584 (0)                  ; 0                 ; 0          ; 62   ; 0            ; |circuito_semana3                                                                                                                                  ; circuito_semana3    ; work         ;
+;    |bcd_to_7seg_display:G4|                       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|bcd_to_7seg_display:G4                                                                                                           ; bcd_to_7seg_display ; work         ;
+;    |bcd_to_7seg_display:G5|                       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|bcd_to_7seg_display:G5                                                                                                           ; bcd_to_7seg_display ; work         ;
+;    |bcd_to_7seg_display:G6|                       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|bcd_to_7seg_display:G6                                                                                                           ; bcd_to_7seg_display ; work         ;
+;    |bcd_to_7seg_display:G7|                       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|bcd_to_7seg_display:G7                                                                                                           ; bcd_to_7seg_display ; work         ;
+;    |binary_to_bcd:G3|                             ; 38 (22)             ; 54 (37)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|binary_to_bcd:G3                                                                                                                 ; binary_to_bcd       ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:1:digit_0| ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:1:digit_0                                                                       ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:2:digit_0| ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:2:digit_0                                                                       ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:3:digit_0| ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:3:digit_0                                                                       ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:4:digit_0| ; 4 (4)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0                                                                       ; binary_to_bcd_digit ; work         ;
+;    |fluxo_dados:G1|                               ; 2013 (6)            ; 3511 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1                                                                                                                   ; fluxo_dados         ; work         ;
+;       |calcula_media:G14|                         ; 375 (41)            ; 41 (41)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|calcula_media:G14                                                                                                 ; calcula_media       ; work         ;
+;          |lpm_divide:Div0|                        ; 334 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_jbm:auto_generated|       ; 334 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0|lpm_divide_jbm:auto_generated                                                   ; lpm_divide_jbm      ; work         ;
+;                |sign_div_unsign_plh:divider|      ; 334 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0|lpm_divide_jbm:auto_generated|sign_div_unsign_plh:divider                       ; sign_div_unsign_plh ; work         ;
+;                   |alt_u_div_ove:divider|         ; 334 (334)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0|lpm_divide_jbm:auto_generated|sign_div_unsign_plh:divider|alt_u_div_ove:divider ; alt_u_div_ove       ; work         ;
+;       |comparador_85:G2|                          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|comparador_85:G2                                                                                                  ; comparador_85       ; work         ;
+;       |comparador_8bits:G12|                      ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|comparador_8bits:G12                                                                                              ; comparador_8bits    ; work         ;
+;       |contador_163:G1|                           ; 9 (9)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|contador_163:G1                                                                                                   ; contador_163        ; work         ;
+;       |contador_163:GLim|                         ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|contador_163:GLim                                                                                                 ; contador_163        ; work         ;
+;       |contador_tempos:G10|                       ; 20 (20)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|contador_tempos:G10                                                                                               ; contador_tempos     ; work         ;
+;       |contador_tempos:G11|                       ; 20 (20)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|contador_tempos:G11                                                                                               ; contador_tempos     ; work         ;
+;       |edge_detector:G4|                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|edge_detector:G4                                                                                                  ; edge_detector       ; work         ;
+;       |edge_detector:G7|                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|edge_detector:G7                                                                                                  ; edge_detector       ; work         ;
+;       |ram_16x4:G3|                               ; 52 (52)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|ram_16x4:G3                                                                                                       ; ram_16x4            ; work         ;
+;       |ram_tempos:G9|                             ; 1429 (1429)         ; 3328 (3328)               ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|ram_tempos:G9                                                                                                     ; ram_tempos          ; work         ;
+;       |registrador_2bits:G8|                      ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|registrador_2bits:G8                                                                                              ; registrador_2bits   ; work         ;
+;       |registrador_4bits:G5|                      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|registrador_4bits:G5                                                                                              ; registrador_4bits   ; work         ;
+;       |timer5k:G6|                                ; 21 (21)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|timer5k:G6                                                                                                        ; timer5k             ; work         ;
+;       |timerRep:G13|                              ; 20 (20)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|timerRep:G13                                                                                                      ; timerRep            ; work         ;
+;       |timerTotal:G15|                            ; 34 (34)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|fluxo_dados:G1|timerTotal:G15                                                                                                    ; timerTotal          ; work         ;
+;    |unidade_controle:G2|                          ; 85 (85)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |circuito_semana3|unidade_controle:G2                                                                                                              ; unidade_controle    ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |circuito_semana3|unidade_controle:G2|Eatual                                                                                                                                                                                                                                                                                                                                                                                         ;
++--------------------------+-------------------------+-------------------------+--------------------------+--------------------------+----------------------+----------------------+----------------------+----------------------+-----------------------+----------------------+-------------------+----------------------+----------------------+-----------------------+---------------------+--------------------+----------------+----------------+
+; Name                     ; Eatual.ExibeJogadaCERTO ; Eatual.PassaJogadaCERTO ; Eatual.ExibeJogadaERRADO ; Eatual.PassaJogadaERRADO ; Eatual.EscreveJogada ; Eatual.ResetContador ; Eatual.EsperaEscrita ; Eatual.AumentaLimite ; Eatual.TerminouErrado ; Eatual.TerminouCerto ; Eatual.CicloCerto ; Eatual.AcertouJogada ; Eatual.ComparaJogada ; Eatual.ArmazenaJogada ; Eatual.EsperaJogada ; Eatual.InicioCiclo ; Eatual.Prepara ; Eatual.Aguarda ;
++--------------------------+-------------------------+-------------------------+--------------------------+--------------------------+----------------------+----------------------+----------------------+----------------------+-----------------------+----------------------+-------------------+----------------------+----------------------+-----------------------+---------------------+--------------------+----------------+----------------+
+; Eatual.Aguarda           ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 0              ;
+; Eatual.Prepara           ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 1              ; 1              ;
+; Eatual.InicioCiclo       ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 1                  ; 0              ; 1              ;
+; Eatual.EsperaJogada      ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 1                   ; 0                  ; 0              ; 1              ;
+; Eatual.ArmazenaJogada    ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 1                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.ComparaJogada     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 1                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.AcertouJogada     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 1                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.CicloCerto        ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 1                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.TerminouCerto     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 1                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.TerminouErrado    ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 1                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.AumentaLimite     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 1                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.EsperaEscrita     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 1                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.ResetContador     ; 0                       ; 0                       ; 0                        ; 0                        ; 0                    ; 1                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.EscreveJogada     ; 0                       ; 0                       ; 0                        ; 0                        ; 1                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.PassaJogadaERRADO ; 0                       ; 0                       ; 0                        ; 1                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.ExibeJogadaERRADO ; 0                       ; 0                       ; 1                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.PassaJogadaCERTO  ; 0                       ; 1                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
+; Eatual.ExibeJogadaCERTO  ; 1                       ; 0                       ; 0                        ; 0                        ; 0                    ; 0                    ; 0                    ; 0                    ; 0                     ; 0                    ; 0                 ; 0                    ; 0                    ; 0                     ; 0                   ; 0                  ; 0              ; 1              ;
++--------------------------+-------------------------+-------------------------+--------------------------+--------------------------+----------------------+----------------------+----------------------+----------------------+-----------------------+----------------------+-------------------+----------------------+----------------------+-----------------------+---------------------+--------------------+----------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                    ;
++---------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; Register name                                                       ; Reason for Removal                                                              ;
++---------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:1:digit_0|prev_ena ; Merged with binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:2:digit_0|prev_ena ; Merged with binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:3:digit_0|prev_ena ; Merged with binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~36                             ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~50                             ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~64                             ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~78                             ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~92                             ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~106                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~120                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~134                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~148                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~162                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~176                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~190                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~204                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~218                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~232                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~246                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~260                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~274                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~288                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~302                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~316                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~330                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~344                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~358                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~372                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~386                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~400                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~414                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~428                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~442                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~456                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~470                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~484                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~498                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~512                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~526                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~540                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~554                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~568                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~582                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~596                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~610                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~624                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~638                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~652                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~666                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~680                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~694                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~708                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~722                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~736                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~750                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~764                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~778                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~792                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~806                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~820                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~834                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~848                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~862                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~876                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~890                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~904                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~918                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~932                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~946                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~960                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~974                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~988                            ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1002                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1016                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1030                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1044                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1058                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1072                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1086                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1100                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1114                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1128                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1142                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1156                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1170                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1184                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1198                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1212                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1226                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1240                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1254                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1268                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1282                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1296                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1310                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1324                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1338                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1352                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1366                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1380                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1394                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1408                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1422                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1436                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1450                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1464                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1478                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1492                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1506                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1520                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1534                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1548                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1562                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1576                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1590                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1604                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1618                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1632                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1646                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1660                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1674                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1688                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1702                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1716                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1730                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1744                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1758                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1772                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1786                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1800                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1814                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1828                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1842                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1856                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1870                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1884                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1898                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1912                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1926                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1940                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1954                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1968                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1982                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~1996                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2010                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2024                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2038                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2052                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2066                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2080                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2094                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2108                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2122                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2136                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2150                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2164                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2178                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2192                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2206                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2220                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2234                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2248                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2262                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2276                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2290                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2304                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2318                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2332                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2346                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2360                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2374                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2388                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2402                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2416                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2430                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2444                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2458                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2472                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2486                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2500                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2514                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2528                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2542                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2556                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2570                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2584                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2598                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2612                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2626                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2640                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2654                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2668                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2682                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2696                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2710                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2724                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2738                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2752                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2766                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2780                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2794                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2808                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2822                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2836                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2850                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2864                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2878                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2892                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2906                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2920                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2934                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2948                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2962                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2976                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~2990                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3004                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3018                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3032                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3046                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3060                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3074                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3088                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3102                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3116                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3130                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3144                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3158                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3172                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3186                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3200                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3214                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3228                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3242                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3256                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3270                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3284                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3298                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3312                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3326                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3340                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3354                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3368                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3382                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3396                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3410                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3424                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3438                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3452                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3466                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3480                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3494                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3508                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3522                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3536                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3550                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3564                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3578                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3592                           ; Stuck at GND due to stuck port data_in                                          ;
+; fluxo_dados:G1|ram_tempos:G9|memoria~3606                           ; Stuck at GND due to stuck port data_in                                          ;
+; Total Number of Removed Registers = 259                             ;                                                                                 ;
++---------------------------------------------------------------------+---------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3584  ;
+; Number of registers using Synchronous Clear  ; 25    ;
+; Number of registers using Synchronous Load   ; 34    ;
+; Number of registers using Asynchronous Clear ; 108   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 3542  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; unidade_controle:G2|certo              ; 4       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|bit_count[0]                                     ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timer5k:G6|IQ[8]                                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timerTotal:G15|IQ[5]                               ;
+; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |circuito_semana3|fluxo_dados:G1|timerTotal:G15|IQ[7]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timer5k:G6|IQ[10]                                  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timerTotal:G15|IQ[19]                              ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timerRep:G13|IQ[3]                                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|timerRep:G13|IQ[4]                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:1:digit_0|bcd[1] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:2:digit_0|bcd[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:3:digit_0|bcd[3] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0|bcd[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|contador_163:GLim|IQ[1]                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|contador_163:GLim|IQ[2]                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|contador_163:G1|IQ[1]                              ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |circuito_semana3|binary_to_bcd:G3|binary_reg[4]                                    ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|contador_tempos:G10|IQ[1]                          ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |circuito_semana3|fluxo_dados:G1|contador_tempos:G11|IQ[7]                          ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G4|display_7seg[6]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G5|display_7seg[5]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G6|display_7seg[5]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G7|display_7seg[6]                            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G4|display_7seg[0]                            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G5|display_7seg[2]                            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G6|display_7seg[0]                            ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |circuito_semana3|bcd_to_7seg_display:G7|display_7seg[3]                            ;
+; 35:1               ; 2 bits    ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; No         ; |circuito_semana3|unidade_controle:G2|Eprox.ExibeJogadaCERTO                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_to_bcd:G3 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; bits           ; 14    ; Signed Integer                       ;
+; digits         ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                    ;
++------------------------+----------------+---------------------------------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                                                 ;
+; LPM_WIDTHD             ; 8              ; Untyped                                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                 ;
+; CBXI_PARAMETER         ; lpm_divide_jbm ; Untyped                                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                          ;
++------------------------+----------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:4:digit_0"                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_to_bcd:G3"                                                                      ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; reset_n ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ena     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; busy    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "unidade_controle:G2"                                                                     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; db_estado ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|timerRep:G13"                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|contador_tempos:G11"                                                      ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; ld        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; limite[3] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rco       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|contador_tempos:G10"                                                      ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; ld        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d         ; Input  ; Info     ; Stuck at GND                                                                        ;
+; limite[3] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rco       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|ram_tempos:G9" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; ce   ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|registrador_2bits:G8" ;
++-------+-------+----------+--------------------------------------+
+; Port  ; Type  ; Severity ; Details                              ;
++-------+-------+----------+--------------------------------------+
+; clear ; Input ; Info     ; Stuck at GND                         ;
++-------+-------+----------+--------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|edge_detector:G7" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|edge_detector:G4" ;
++-------+-------+----------+----------------------------------+
+; Port  ; Type  ; Severity ; Details                          ;
++-------+-------+----------+----------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                     ;
++-------+-------+----------+----------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|ram_16x4:G3" ;
++------+-------+----------+------------------------------+
+; Port ; Type  ; Severity ; Details                      ;
++------+-------+----------+------------------------------+
+; ce   ; Input ; Info     ; Stuck at GND                 ;
++------+-------+----------+------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|comparador_85:G2"                                                      ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_agtb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_altb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_aeqb ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_agtb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_altb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|contador_163:GLim" ;
++--------------+-------+----------+----------------------------+
+; Port         ; Type  ; Severity ; Details                    ;
++--------------+-------+----------+----------------------------+
+; ld           ; Input ; Info     ; Stuck at VCC               ;
+; d            ; Input ; Info     ; Stuck at GND               ;
+; limite[1..0] ; Input ; Info     ; Stuck at VCC               ;
++--------------+-------+----------+----------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1|contador_163:G1" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; ld   ; Input ; Info     ; Stuck at VCC                     ;
+; d    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:G1"                                                                              ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; db_tem_jogada ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_contagem   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_memoria    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_limite     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_nivel      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 3584                        ;
+;     CLR               ; 26                          ;
+;     CLR SCLR          ; 1                           ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 3427                        ;
+;     ENA CLR           ; 60                          ;
+;     ENA CLR SLD       ; 20                          ;
+;     ENA SCLR          ; 23                          ;
+;     ENA SLD           ; 12                          ;
+;     SCLR              ; 1                           ;
+;     SLD               ; 1                           ;
+;     plain             ; 12                          ;
+; arriav_lcell_comb     ; 2205                        ;
+;     arith             ; 267                         ;
+;         0 data inputs ; 35                          ;
+;         1 data inputs ; 79                          ;
+;         2 data inputs ; 32                          ;
+;         4 data inputs ; 72                          ;
+;         5 data inputs ; 49                          ;
+;     normal            ; 1929                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 42                          ;
+;         2 data inputs ; 352                         ;
+;         3 data inputs ; 77                          ;
+;         4 data inputs ; 140                         ;
+;         5 data inputs ; 69                          ;
+;         6 data inputs ; 1248                        ;
+;     shared            ; 9                           ;
+;         0 data inputs ; 3                           ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 3                           ;
+; boundary_port         ; 62                          ;
+;                       ;                             ;
+; Max LUT depth         ; 37.30                       ;
+; Average LUT depth     ; 6.96                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:08     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Apr 06 22:30:10 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off circuito_semana3 -c circuito_semana3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhd
+    Info (12022): Found design unit 1: unidade_controle-fsm File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/unidade_controle.vhd Line: 44
+    Info (12023): Found entity 1: unidade_controle File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/unidade_controle.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file timer5k.vhd
+    Info (12022): Found design unit 1: timer5k-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timer5k.vhd Line: 15
+    Info (12023): Found entity 1: timer5k File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timer5k.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_4bits.vhd
+    Info (12022): Found design unit 1: registrador_4bits-arch File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_4bits.vhd Line: 26
+    Info (12023): Found entity 1: registrador_4bits File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_4bits.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_2bits.vhd
+    Info (12022): Found design unit 1: registrador_2bits-arch File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_2bits.vhd Line: 14
+    Info (12023): Found entity 1: registrador_2bits File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_2bits.vhd Line: 4
+Info (12021): Found 3 design units, including 1 entities, in source file ram_tempos.vhd
+    Info (12022): Found design unit 1: ram_tempos-ram_mif File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd Line: 16
+    Info (12022): Found design unit 2: ram_tempos-ram_modelsim File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd Line: 46
+    Info (12023): Found entity 1: ram_tempos File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file ram_16x4.vhd
+    Info (12022): Found design unit 1: ram_16x4-ram_mif File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd Line: 38
+    Info (12022): Found design unit 2: ram_16x4-ram_modelsim File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd Line: 68
+    Info (12023): Found entity 1: ram_16x4 File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file hexa7seg.vhd
+    Info (12022): Found design unit 1: hexa7seg-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/hexa7seg.vhd Line: 30
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/hexa7seg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
+    Info (12022): Found design unit 1: fluxo_dados-dataflow File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 46
+    Info (12023): Found entity 1: fluxo_dados File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file edge_detector.vhd
+    Info (12022): Found design unit 1: edge_detector-rtl File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/edge_detector.vhd Line: 28
+    Info (12023): Found entity 1: edge_detector File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/edge_detector.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file contador_tempos.vhd
+    Info (12022): Found design unit 1: contador_tempos-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_tempos.vhd Line: 19
+    Info (12023): Found entity 1: contador_tempos File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_tempos.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file contador_163.vhd
+    Info (12022): Found design unit 1: contador_163-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_163.vhd Line: 31
+    Info (12023): Found entity 1: contador_163 File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_163.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_8bits.vhd
+    Info (12022): Found design unit 1: comparador_8bits-dataflow File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd Line: 19
+    Info (12023): Found entity 1: comparador_8bits File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_85.vhd
+    Info (12022): Found design unit 1: comparador_85-dataflow File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_85.vhd Line: 32
+    Info (12023): Found entity 1: comparador_85 File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_85.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file binary_to_bcd_digit.vhd
+    Info (12022): Found design unit 1: binary_to_bcd_digit-logic File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd_digit.vhd Line: 36
+    Info (12023): Found entity 1: binary_to_bcd_digit File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd_digit.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file binary_to_bcd.vhd
+    Info (12022): Found design unit 1: binary_to_bcd-logic File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd.vhd Line: 43
+    Info (12023): Found entity 1: binary_to_bcd File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd.vhd Line: 30
+Info (12021): Found 2 design units, including 1 entities, in source file circuito_semana3.vhd
+    Info (12022): Found design unit 1: circuito_semana3-arch_semana3 File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 34
+    Info (12023): Found entity 1: circuito_semana3 File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bcd_to_7seg_display.vhd
+    Info (12022): Found design unit 1: bcd_to_7seg_display-arch_bcd File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/bcd_to_7seg_display.vhd Line: 11
+    Info (12023): Found entity 1: bcd_to_7seg_display File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/bcd_to_7seg_display.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file timerrep.vhd
+    Info (12022): Found design unit 1: timerRep-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerRep.vhd Line: 15
+    Info (12023): Found entity 1: timerRep File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerRep.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file calcula_media.vhd
+    Info (12022): Found design unit 1: calcula_media-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 15
+    Info (12023): Found entity 1: calcula_media File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file timertotal.vhd
+    Info (12022): Found design unit 1: timerTotal-comportamental File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerTotal.vhd Line: 15
+    Info (12023): Found entity 1: timerTotal File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerTotal.vhd Line: 5
+Info (12127): Elaborating entity "circuito_semana3" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(156): object "not_reset" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 156
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(168): object "contagem" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 168
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(169): object "memoria" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 169
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(170): object "estado" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 170
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(173): object "limite_FD" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 173
+Warning (10036): Verilog HDL or VHDL warning at circuito_semana3.vhd(186): object "busy_BCD" assigned a value but never read File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 186
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "fluxo_dados:G1" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 190
+Info (12128): Elaborating entity "contador_163" for hierarchy "fluxo_dados:G1|contador_163:G1" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 226
+Info (12128): Elaborating entity "comparador_85" for hierarchy "fluxo_dados:G1|comparador_85:G2" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 248
+Info (12128): Elaborating entity "ram_16x4" for hierarchy "fluxo_dados:G1|ram_16x4:G3" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 264
+Info (12128): Elaborating entity "edge_detector" for hierarchy "fluxo_dados:G1|edge_detector:G4" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 272
+Info (12128): Elaborating entity "registrador_4bits" for hierarchy "fluxo_dados:G1|registrador_4bits:G5" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 280
+Info (12128): Elaborating entity "timer5k" for hierarchy "fluxo_dados:G1|timer5k:G6" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 289
+Info (12128): Elaborating entity "registrador_2bits" for hierarchy "fluxo_dados:G1|registrador_2bits:G8" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 304
+Info (12128): Elaborating entity "ram_tempos" for hierarchy "fluxo_dados:G1|ram_tempos:G9" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 331
+Info (12128): Elaborating entity "contador_tempos" for hierarchy "fluxo_dados:G1|contador_tempos:G10" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 345
+Info (12128): Elaborating entity "comparador_8bits" for hierarchy "fluxo_dados:G1|comparador_8bits:G12" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 368
+Warning (10492): VHDL Process Statement warning at comparador_8bits.vhd(28): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at comparador_8bits.vhd(28): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd Line: 28
+Info (12128): Elaborating entity "timerRep" for hierarchy "fluxo_dados:G1|timerRep:G13" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 380
+Info (12128): Elaborating entity "calcula_media" for hierarchy "fluxo_dados:G1|calcula_media:G14" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 392
+Warning (10492): VHDL Process Statement warning at calcula_media.vhd(35): signal "soma" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at calcula_media.vhd(36): signal "num_jogadas" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at calcula_media.vhd(37): signal "media" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 37
+Info (12128): Elaborating entity "timerTotal" for hierarchy "fluxo_dados:G1|timerTotal:G15" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd Line: 400
+Warning (10492): VHDL Process Statement warning at timerTotal.vhd(38): signal "lim" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerTotal.vhd Line: 38
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "unidade_controle:G2" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 230
+Info (12128): Elaborating entity "binary_to_bcd" for hierarchy "binary_to_bcd:G3" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 278
+Info (12128): Elaborating entity "binary_to_bcd_digit" for hierarchy "binary_to_bcd:G3|binary_to_bcd_digit:\bcd_digits:1:digit_0" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd.vhd Line: 108
+Info (12128): Elaborating entity "bcd_to_7seg_display" for hierarchy "bcd_to_7seg_display:G4" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd Line: 290
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "fluxo_dados:G1|ram_tempos:G9|memoria" is uninferred due to asynchronous read logic File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd Line: 48
+    Info (276007): RAM logic "fluxo_dados:G1|ram_16x4:G3|memoria" is uninferred due to asynchronous read logic File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd Line: 70
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "fluxo_dados:G1|calcula_media:G14|Div0" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 33
+Info (12130): Elaborated megafunction instantiation "fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0" File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 33
+Info (12133): Instantiated megafunction "fluxo_dados:G1|calcula_media:G14|lpm_divide:Div0" with the following parameter: File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd Line: 33
+    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jbm.tdf
+    Info (12023): Found entity 1: lpm_divide_jbm File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/lpm_divide_jbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_plh File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/sign_div_unsign_plh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
+    Info (12023): Found entity 1: alt_u_div_ove File: C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/db/alt_u_div_ove.tdf Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5659 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 5597 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Tue Apr 06 22:30:54 2021
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:00:28
+
+

@@ -1,0 +1,183 @@
+{C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_4bits
+-- Compiling architecture arch of registrador_4bits
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hexa7seg
+-- Compiling architecture comportamental of hexa7seg
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_BIT
+-- Compiling entity tb_semana3
+-- Compiling architecture tb of tb_semana3
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity timerTotal
+-- Compiling architecture comportamental of timerTotal
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bcd_to_7seg_display
+-- Compiling architecture arch_bcd of bcd_to_7seg_display
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edge_detector
+-- Compiling architecture rtl of edge_detector
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_tempos
+-- Compiling architecture ram_mif of ram_tempos
+-- Compiling architecture ram_modelsim of ram_tempos
+-- Loading entity ram_tempos
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity binary_to_bcd
+-- Compiling architecture logic of binary_to_bcd
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity timer5k
+-- Compiling architecture comportamental of timer5k
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity comparador_8bits
+-- Compiling architecture dataflow of comparador_8bits
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_tempos
+-- Compiling architecture comportamental of contador_tempos
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_16x4
+-- Compiling architecture ram_mif of ram_16x4
+-- Compiling architecture ram_modelsim of ram_16x4
+-- Loading entity ram_16x4
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_163
+-- Compiling architecture comportamental of contador_163
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity calcula_media
+-- Compiling architecture comportamental of calcula_media
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador_85
+-- Compiling architecture dataflow of comparador_85
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity unidade_controle
+-- Compiling architecture fsm of unidade_controle
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity binary_to_bcd_digit
+-- Compiling architecture logic of binary_to_bcd_digit
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity timerRep
+-- Compiling architecture comportamental of timerRep
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fluxo_dados
+-- Compiling architecture dataflow of fluxo_dados
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_2bits
+-- Compiling architecture arch of registrador_2bits
+
+} {} {}} {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity circuito_semana3
+-- Compiling architecture arch_semana3 of circuito_semana3
+
+} {} {}}

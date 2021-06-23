@@ -1,0 +1,36 @@
+Quartus Prime Archive log --	C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.qarlog
+
+Archive:	C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.qar
+Date:		Tue Apr 06 22:38:24 2021
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/assignment_defaults.qdf
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/bcd_to_7seg_display.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/binary_to_bcd_digit.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/calcula_media.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.qpf
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.qsf
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/circuito_semana3_assignment_defaults.qdf
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_85.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/comparador_8bits.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_163.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/contador_tempos.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/edge_detector.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/fluxo_dados.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/hexa7seg.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/output_files/Chain1.cdf
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_16x4.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/ram_tempos.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_2bits.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/registrador_4bits.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timer5k.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerRep.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/timerTotal.vhd
+C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/unidade_controle.vhd
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

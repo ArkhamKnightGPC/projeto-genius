@@ -1,0 +1,932 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana3/circuito_semana3/_ModelSim
+Ebcd_to_7seg_display
+Z0 w1617026049
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 63
+Z3 dC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim
+Z4 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd
+Z5 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd
+l0
+L4 1
+VNmUI0_Pk@<AD0h;9SaSJE2
+!s100 N_h9dS7L6eeQJQa`L^IV_1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1617757835
+!i10b 1
+Z8 !s108 1617757835.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd|
+Z10 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/bcd_to_7seg_display.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch_bcd
+R1
+R2
+DEx4 work 19 bcd_to_7seg_display 0 22 NmUI0_Pk@<AD0h;9SaSJE2
+!i122 63
+l12
+L11 31
+VlkYjozN4RdS=BV:=k?2IQ2
+!s100 GoVXIKhCGEJ9ZZUUfzjd02
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebinary_to_bcd
+Z13 w1617017581
+R1
+R2
+!i122 64
+R3
+Z14 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd
+Z15 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd
+l0
+L30 1
+VMXJA0_:QEP@Ge<<iD_JeG3
+!s100 BYfO2NSM4kM4LX?25^EzR2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd|
+Z17 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd.vhd|
+!i113 1
+R11
+R12
+Alogic
+R1
+R2
+DEx4 work 13 binary_to_bcd 0 22 MXJA0_:QEP@Ge<<iD_JeG3
+!i122 64
+l62
+L43 70
+V5DNcj[@CPM4<QNj?d`0[E2
+!s100 Bj_f?`f6UcTZnMZ[7O[f93
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ebinary_to_bcd_digit
+Z18 w1617017585
+R1
+R2
+!i122 65
+R3
+Z19 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd
+Z20 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd
+l0
+L26 1
+VI>QzI^TldM7S`hkEHE71l2
+!s100 @jfijB;4d@1K@oH@I3gD23
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd|
+Z22 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/binary_to_bcd_digit.vhd|
+!i113 1
+R11
+R12
+Alogic
+R1
+R2
+DEx4 work 19 binary_to_bcd_digit 0 22 I>QzI^TldM7S`hkEHE71l2
+!i122 65
+l38
+L36 29
+VQ:N8Pn_@:0fXJPj[im@DW1
+!s100 DnAo;RPL`PlPT>`Wzgcbb3
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ecalcula_media
+Z23 w1617627166
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 66
+R3
+Z25 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd
+Z26 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd
+l0
+L5 1
+VC[G[hODkcCK`h`FnV34kB0
+!s100 KLClHfKKJ1DWSfVjBdMFM3
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd|
+Z28 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/calcula_media.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 13 calcula_media 0 22 C[G[hODkcCK`h`FnV34kB0
+!i122 66
+l20
+L15 28
+V9>QL]@jX8CCcQW5d7jn0M0
+!s100 :m5GP``9Mf0nC@e^a0jo@1
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Ecircuito_semana3
+Z29 w1617631327
+R1
+R2
+!i122 67
+R3
+Z30 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd
+Z31 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd
+l0
+L4 1
+VgVoMfcn_fjaVNIYcX2L[m1
+!s100 TXFofC6N`@<]=R86PI4ZU1
+R6
+32
+Z32 !s110 1617757836
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd|
+Z34 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/circuito_semana3.vhd|
+!i113 1
+R11
+R12
+Aarch_semana3
+R1
+R2
+DEx4 work 16 circuito_semana3 0 22 gVoMfcn_fjaVNIYcX2L[m1
+!i122 67
+l188
+L34 268
+VBDllTJ5GHQ::0n0fRY`hj0
+!s100 9LO4dLG78Vk_Xz49DGS`o1
+R6
+32
+R32
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Ecomparador_85
+Z35 w1616378065
+R1
+R2
+!i122 69
+R3
+Z36 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd
+Z37 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd
+l0
+L4 1
+V=hREj61SBnk=UznWak:mV0
+!s100 RB=KK5m>;<MeMW4@ohzHJ1
+R6
+32
+R32
+!i10b 1
+Z38 !s108 1617757836.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd|
+Z40 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_85.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 13 comparador_85 0 22 =hREj61SBnk=UznWak:mV0
+!i122 69
+l38
+L32 32
+Vbd39YYb3fNT14WfdHjC2C3
+!s100 8?C=J=n5>1?kT`oOROQ253
+R6
+32
+R32
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R11
+R12
+Ecomparador_8bits
+Z41 w1616550174
+R24
+R1
+R2
+!i122 68
+R3
+Z42 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd
+Z43 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd
+l0
+L5 1
+V]:j5g>[MM]7PVX4T<DTCd1
+!s100 `Y4Z@W_gV29cE_gRKO;[:3
+R6
+32
+R32
+!i10b 1
+R38
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd|
+Z45 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/comparador_8bits.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R24
+R1
+R2
+DEx4 work 16 comparador_8bits 0 22 ]:j5g>[MM]7PVX4T<DTCd1
+!i122 68
+l23
+L19 17
+Vlg0kAKIFl_VVa6c8<ihJ80
+!s100 BVkE1UNCX@>KgRNDlF^L`3
+R6
+32
+R32
+!i10b 1
+R38
+R44
+R45
+!i113 1
+R11
+R12
+Econtador_163
+Z46 w1613903421
+R24
+R1
+R2
+!i122 70
+R3
+Z47 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd
+Z48 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd
+l0
+L17 1
+VdT^34OU^ic@`h^B7H^6Z?0
+!s100 zAc@ASNbGh36VC5BdUYAk2
+R6
+32
+R32
+!i10b 1
+R38
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd|
+Z50 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_163.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 12 contador_163 0 22 dT^34OU^ic@`h^B7H^6Z?0
+!i122 70
+l34
+L31 31
+VbII5V4AAzGdSROkb^^6iU0
+!s100 <Oolk==kK>?>nKzo5anO;2
+R6
+32
+R32
+!i10b 1
+R38
+R49
+R50
+!i113 1
+R11
+R12
+Econtador_tempos
+Z51 w1616374043
+R24
+R1
+R2
+!i122 71
+R3
+Z52 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd
+Z53 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd
+l0
+L5 1
+VOD:BZ;33WlN4^dl7jlzzI2
+!s100 D3D0XGKOV7R;^mDg:A^Be0
+R6
+32
+R32
+!i10b 1
+R38
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd|
+Z55 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/contador_tempos.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 15 contador_tempos 0 22 OD:BZ;33WlN4^dl7jlzzI2
+!i122 71
+l22
+L19 31
+V::<jmW`<D7;4EDJHSjFjK0
+!s100 WRRlbT@IE1`@YSoVoh@9O1
+R6
+32
+R32
+!i10b 1
+R38
+R54
+R55
+!i113 1
+R11
+R12
+Eedge_detector
+Z56 w1612661274
+R1
+R2
+!i122 72
+R3
+Z57 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd
+Z58 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd
+l0
+L20 1
+VEo0eGFVaB?lFVCga:H<lC3
+!s100 cb7ZondQd^3Uoel=if?fW2
+R6
+32
+Z59 !s110 1617757837
+!i10b 1
+R38
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd|
+Z61 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/edge_detector.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 13 edge_detector 0 22 Eo0eGFVaB?lFVCga:H<lC3
+!i122 72
+l32
+L28 20
+V7NTfkB;Jo3gj9G7>d[W8F1
+!s100 fhXf:H4><2;JERm?8FmP[3
+R6
+32
+R59
+!i10b 1
+R38
+R60
+R61
+!i113 1
+R11
+R12
+Efluxo_dados
+Z62 w1617757753
+R1
+R2
+!i122 73
+R3
+Z63 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd
+Z64 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd
+l0
+L4 1
+V_ITDXC^N0Phc86WKQ@04C0
+!s100 =0A;WfjGdPX;G]V@;BZIQ2
+R6
+32
+R59
+!i10b 1
+Z65 !s108 1617757837.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd|
+Z67 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/fluxo_dados.vhd|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 11 fluxo_dados 0 22 _ITDXC^N0Phc86WKQ@04C0
+!i122 73
+l217
+L46 363
+VL?L[fi_afONnB1PF`1m]>2
+!s100 geJ]08I_XzSlGj9hS>zW?1
+R6
+32
+R59
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R11
+R12
+Ehexa7seg
+Z68 w1614044366
+R1
+R2
+!i122 74
+R3
+Z69 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd
+Z70 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd
+l0
+L23 1
+V1>aA<`96lR`JYXNeihZeQ0
+!s100 mm^OoZKaI6^<nlLb0bilm1
+R6
+32
+R59
+!i10b 1
+R65
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd|
+Z72 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/hexa7seg.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 8 hexa7seg 0 22 1>aA<`96lR`JYXNeihZeQ0
+!i122 74
+l31
+L30 22
+V;^_;?k;_;Ok3D]<Z?ZICI3
+!s100 KQITC_U^>^BRdo?ZJdZH=3
+R6
+32
+R59
+!i10b 1
+R65
+R71
+R72
+!i113 1
+R11
+R12
+Eram_16x4
+Z73 w1615676941
+R24
+R1
+R2
+!i122 75
+R3
+Z74 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd
+Z75 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd
+l0
+L27 1
+V5D3SaYO`[>O<YnzZ5gTMh2
+!s100 _bAg:[U]Vk9XLZ8GGMUW22
+R6
+32
+R59
+!i10b 1
+R65
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd|
+Z77 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_16x4.vhd|
+!i113 1
+R11
+R12
+Aram_modelsim
+R24
+R1
+R2
+Z78 DEx4 work 8 ram_16x4 0 22 5D3SaYO`[>O<YnzZ5gTMh2
+!i122 75
+l88
+L68 40
+V=oVT=MLcjPJH1>H]PVeg63
+!s100 ?HOLjdAe_SgLd^Uf[^6M51
+R6
+32
+R59
+!i10b 1
+R65
+R76
+R77
+!i113 1
+R11
+R12
+Aram_mif
+R24
+R1
+R2
+R78
+!i122 75
+l46
+L38 28
+VRmXzS]9b?jBXYkgH;lk=Q0
+!s100 fWP;XfBEIZoS;0Eb?GKlH1
+R6
+32
+R59
+!i10b 1
+R65
+R76
+R77
+!i113 1
+R11
+R12
+Eram_tempos
+Z79 w1616371684
+R24
+R1
+R2
+!i122 76
+R3
+Z80 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd
+Z81 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd
+l0
+L5 1
+VKckJ5ngOi1FA0:UVXEBK@2
+!s100 Vo1<U00HZAO>M<EoYbdWP0
+R6
+32
+R59
+!i10b 1
+R65
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd|
+Z83 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/ram_tempos.vhd|
+!i113 1
+R11
+R12
+Aram_modelsim
+R24
+R1
+R2
+Z84 DEx4 work 10 ram_tempos 0 22 KckJ5ngOi1FA0:UVXEBK@2
+!i122 76
+l305
+L46 278
+VRlXM^Ac2d>mzheCajh@Nd3
+!s100 GCz0HLC?<fS[iYkCV>Pze0
+R6
+32
+R59
+!i10b 1
+R65
+R82
+R83
+!i113 1
+R11
+R12
+Aram_mif
+R24
+R1
+R2
+R84
+!i122 76
+l24
+L16 28
+VV[HiN4Hh`KRJ0C^S`47We0
+!s100 B;cAOb2=E_`S2d@]T1IAV3
+R6
+32
+R59
+!i10b 1
+R65
+R82
+R83
+!i113 1
+R11
+R12
+Eregistrador_2bits
+Z85 w1615674642
+R1
+R2
+!i122 77
+R3
+Z86 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd
+Z87 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd
+l0
+L4 1
+VKmSY:DLWz35]A^717>MM`2
+!s100 `?:KcimU>BM7AKDI2?MJ23
+R6
+32
+R59
+!i10b 1
+R65
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd|
+Z89 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_2bits.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 registrador_2bits 0 22 KmSY:DLWz35]A^717>MM`2
+!i122 77
+l16
+L14 13
+V6Z[:_h0XU5Zn6n9Xn09W71
+!s100 O6m7^X4eI_X__Dog2mCXl2
+R6
+32
+R59
+!i10b 1
+R65
+R88
+R89
+!i113 1
+R11
+R12
+Eregistrador_4bits
+Z90 w1612661250
+R1
+R2
+!i122 78
+R3
+Z91 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd
+Z92 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd
+l0
+L16 1
+V=8Q=@]GIXO1ah4<AgecZi2
+!s100 odzBBG]bO`:JS;P[To`Ng3
+R6
+32
+Z93 !s110 1617757838
+!i10b 1
+Z94 !s108 1617757838.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd|
+Z96 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/registrador_4bits.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 registrador_4bits 0 22 =8Q=@]GIXO1ah4<AgecZi2
+!i122 78
+l28
+L26 13
+V26NVK8YhlUEGg=0==[=lA0
+!s100 f<;6]7:>A8B`4B3biWjB^2
+R6
+32
+R93
+!i10b 1
+R94
+R95
+R96
+!i113 1
+R11
+R12
+Etb_semana3
+Z97 w1617757803
+Z98 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+R1
+R2
+!i122 79
+R3
+Z99 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd
+Z100 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd
+l0
+L5 1
+VUCz]S>XCh2d^^Z8W=Z^;X2
+!s100 _hk1^k>GG<nnY=C>HoH?n3
+R6
+32
+R93
+!i10b 1
+R94
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd|
+Z102 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/tb_semana3.vhd|
+!i113 1
+R11
+R12
+Atb
+R98
+R1
+R2
+DEx4 work 10 tb_semana3 0 22 UCz]S>XCh2d^^Z8W=Z^;X2
+!i122 79
+l71
+L8 140
+V;7JO9FbJ7dWdAB_>3KJQZ3
+!s100 aY8hnE9lR4QW09[VDjl3I0
+R6
+32
+R93
+!i10b 1
+R94
+R101
+R102
+!i113 1
+R11
+R12
+Etimer5k
+Z103 w1614458945
+R24
+R1
+R2
+!i122 80
+R3
+Z104 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd
+Z105 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd
+l0
+L5 1
+V?dmb352GDQPL:?_Y0V1_K2
+!s100 L@GTWKE^nANZ3mF9HEQX=1
+R6
+32
+R93
+!i10b 1
+R94
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd|
+Z107 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timer5k.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 7 timer5k 0 22 ?dmb352GDQPL:?_Y0V1_K2
+!i122 80
+l17
+Z108 L15 23
+VEW;g8leB4lHizG3TzOQN70
+!s100 ZHLhf<oPLWXWRIi:4D57h2
+R6
+32
+R93
+!i10b 1
+R94
+R106
+R107
+!i113 1
+R11
+R12
+Etimerrep
+Z109 w1617757709
+R24
+R1
+R2
+!i122 81
+R3
+Z110 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd
+Z111 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd
+l0
+L5 1
+V3YjoRI8;ILk2ORoX@h4SM0
+!s100 YeFj]OaUAUWFY3khKcJez1
+R6
+32
+R93
+!i10b 1
+R94
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd|
+Z113 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerRep.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 8 timerrep 0 22 3YjoRI8;ILk2ORoX@h4SM0
+!i122 81
+l17
+R108
+V>RZHlOBK>`o6bn;BKaSoT0
+!s100 9CdXlnlOaCn5HCDRiB9PQ0
+R6
+32
+R93
+!i10b 1
+R94
+R112
+R113
+!i113 1
+R11
+R12
+Etimertotal
+Z114 w1617757830
+R24
+R1
+R2
+!i122 82
+R3
+Z115 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd
+Z116 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd
+l0
+L5 1
+VMjA7SBfH0^2bE9o9G=9ZG3
+!s100 HbHCm2=[Y@BeoI6M3?fRE1
+R6
+32
+Z117 !s110 1617757839
+!i10b 1
+R94
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd|
+Z119 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/timerTotal.vhd|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R1
+R2
+DEx4 work 10 timertotal 0 22 MjA7SBfH0^2bE9o9G=9ZG3
+!i122 82
+l17
+L15 31
+Vb_8Q3HeZTIc=ee_QV[Id;2
+!s100 LL3j=KNBT@gZ7nJDgjfmb1
+R6
+32
+R117
+!i10b 1
+R94
+R118
+R119
+!i113 1
+R11
+R12
+Eunidade_controle
+Z120 w1617631936
+R1
+R2
+!i122 83
+R3
+Z121 8C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd
+Z122 FC:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd
+l0
+L4 1
+V356Q]l;;i6PLBKD9?kNlC0
+!s100 7Fcb;QHW:W_DHTeT@BTO@0
+R6
+32
+R117
+!i10b 1
+Z123 !s108 1617757839.000000
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd|
+Z125 !s107 C:/Users/wonde/Documents/POLI/LabDig ProjetoFinal/semana4/circuito_semana4/_ModelSim/unidade_controle.vhd|
+!i113 1
+R11
+R12
+Afsm
+R1
+R2
+Z126 DEx4 work 16 unidade_controle 0 22 356Q]l;;i6PLBKD9?kNlC0
+!i122 83
+l66
+Z127 L44 221
+Z128 V:>0ZPTKd5Z4X93eOeZBoC2
+Z129 !s100 Ni;67HfG`lS?51l?:J0f53
+R6
+32
+R117
+!i10b 1
+R123
+R124
+R125
+!i113 1
+R11
+R12
